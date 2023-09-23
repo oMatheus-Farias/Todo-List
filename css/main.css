@@ -1,0 +1,96 @@
+/* Variables */
+:root{
+    --primary-color: #eff1f0;
+    --dark-color: #313132;
+    --lite--color: #fff;
+    --purple-color: #7e5dca;
+}
+
+html{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 67.5%;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.center{
+    padding: 0 2em;
+    margin: auto;
+}
+
+.main-title{
+    font-size: 4rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--purple-color);
+}
+
+.input-container{
+    background-color:var(--lite--color);
+    padding: 2em 0;
+    border-radius: 10px;
+}
+
+.input-container .center{
+    display: flex;
+    justify-content: center;
+}
+
+.input_newTask{
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+
+.fa-circle-plus{
+    font-size: 4rem;
+    cursor: pointer;
+    color: var(--purple-color);
+}
+
+.fa-circle-plus:hover{
+    color: var(--dark-color);
+}
+
+
+
+
+
+
+
+.taskLi{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.checkBox{
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid var(--dark-color);
+    border-radius: 2px;
+}
+
+.check{
+    display: block;
+    width: .4em;
+    height: .6em;
+    border-bottom: 4px solid var(--purple-color);
+    border-right: 4px solid var(--purple-color);
+    border-radius: 2px;
+    transform: translate(-2.1em, -.1em) rotate(38deg);
+}
