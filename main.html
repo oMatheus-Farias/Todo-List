@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1 class="main-title">Todo List</h1>
+    <h1 class="main-title">To-do <span class="main-title_colorLite">List</span></h1>
 
     <main class="main-container">
         <section class="input-container">
@@ -37,9 +37,32 @@
         <section class="tasks-container">
             <div class="center">
                 <ul class="box-tasks">
-                    <li class="taskLi"><div class="checkBox"></div><span class="check"></span>teste<i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></li>
-                    <li class="taskLi"><div class="checkBox"></div><span class="check"></span>teste<i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></li>
-                    <li class="taskLi"><div class="checkBox"></div><span class="check"></span>teste<i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></li>
+                    <li class="taskLi">
+                        <div class="checkBox"></div><span class="check"></span><p class="taskLi_text" >teste</p><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                        <div class="boxEdit-container" style="display: none;">
+                            <input type="text" class="boxEdit_newText" placeholder="New text">
+                            <button class="boxEdit_btn edit_btn">Edit</button>
+                            <button class="boxEdit_btn cancel_btn">Cancel</button>
+                        </div>
+                    </li>
+
+                    <li class="taskLi">
+                        <div class="checkBox"></div><span class="check"></span><p class="taskLi_text" >teste</p><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                        <div class="boxEdit-container" style="display: none;">
+                            <input type="text" class="boxEdit_newText" placeholder="New text">
+                            <button class="boxEdit_btn edit_btn">Edit</button>
+                            <button class="boxEdit_btn cancel_btn">Cancel</button>
+                        </div>
+                    </li>
+
+                    <li class="taskLi">
+                        <div class="checkBox"></div><span class="check"></span><p class="taskLi_text" >teste</p><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                        <div class="boxEdit-container" style="display: none;">
+                            <input type="text" class="boxEdit_newText" placeholder="New text">
+                            <button class="boxEdit_btn edit_btn">Edit</button>
+                            <button class="boxEdit_btn cancel_btn">Cancel</button>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>

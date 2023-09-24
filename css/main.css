@@ -1,9 +1,9 @@
 /* Variables */
 :root{
-    --primary-color: #eff1f0;
-    --dark-color: #313132;
-    --lite--color: #fff;
-    --purple-color: #7e5dca;
+    --primary-color: #171924;
+    --red-color: #ff4950;
+    --lite-color: #fffffc;
+    --btnEdit-color: #4fdb4f;
 }
 
 html{
@@ -25,21 +25,36 @@ ul{
     padding: 0;
 }
 
+p{
+    margin: 0;
+}
+
 .center{
-    padding: 0 2em;
+    padding: .2em 2em;
     margin: auto;
 }
 
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+}
+
 .main-title{
+    color: var(--red-color);
     font-size: 4rem;
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--purple-color);
+    border-bottom: 2px solid var(--red-color);
+}
+
+.main-title_colorLite{
+    color: var(--lite-color);
 }
 
 .input-container{
-    background-color:var(--lite--color);
-    padding: 2em 0;
-    border-radius: 10px;
+    background-color:var(--lite-color);
+    padding: 1em 0;
+    border-radius: 4px;
 }
 
 .input-container .center{
@@ -56,41 +71,112 @@ ul{
 .fa-circle-plus{
     font-size: 4rem;
     cursor: pointer;
-    color: var(--purple-color);
+    color: var(--primary-color);
 }
 
 .fa-circle-plus:hover{
-    color: var(--dark-color);
+    color: var(--red-color);
 }
 
+.tasks-container{
+    background-color: var(--lite-color);
+    border-radius: 4px;
+}
 
-
-
-
-
+.box-tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
 .taskLi{
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: .6em;
     padding: 1em 0;
     box-sizing: border-box;
-    margin-bottom: 1em;
+    font-size: 1.6rem;
+    padding: .8em;
+    border-radius: 6px;
+    box-shadow: 0 0 6px var(--primary-color);
+    position: relative;
+}
+
+.taskLi_text{
+    flex: 1;
 }
 
 .checkBox{
     width: 1.4em;
     height: 1.4em;
-    border: 1px solid var(--dark-color);
+    border: 2px solid var(--primary-color);
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .check{
     display: block;
     width: .4em;
-    height: .6em;
-    border-bottom: 4px solid var(--purple-color);
-    border-right: 4px solid var(--purple-color);
+    height: .8em;
+    border-bottom: 4px solid var(--red-color);
+    border-right: 4px solid var(--red-color);
     border-radius: 2px;
-    transform: translate(-2.1em, -.1em) rotate(38deg);
+    transform: translate(-1.8em, -.1em) rotate(38deg);
+    cursor: pointer;
+}
+
+.fa-pen-to-square{
+    color: var(--red-color);
+    cursor: pointer;
+}
+
+.fa-pen-to-square:hover{
+    color: var(--primary-color);
+}
+
+.fa-trash{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.fa-trash:hover{
+    color: var(--red-color);
+}
+
+.boxEdit-container{
+    display: flex;
+    gap: .2em;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 2px var(--lite-color);
+    padding: 1em .4em;
+    margin: auto;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 3em;
+    left: -2em;
+    z-index: 1;
+}
+
+.boxEdit_newText{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.boxEdit_btn{
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--lite-color);
+    padding: .4em .6em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit_btn:hover{
+    background-color: var(--btnEdit-color);
+}
+
+.cancel_btn:hover{
+    background-color: var(--red-color);
 }
