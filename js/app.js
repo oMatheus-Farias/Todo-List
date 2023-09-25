@@ -1,17 +1,6 @@
 import { generateLi } from "./func-generateLi.js";
-
-const arrTasks = [
-    {
-        name: "task1",
-        createdAt: Date.now(),
-        completed: false 
-    },
-    {
-        name: "task2",
-        createdAt: Date.now(),
-        completed: false
-    }
-];
+import { arrTasks } from "./func-returnLocalStorage.js";
+import { setNewData } from "./func-returnLocalStorage.js";
 
 export const $inputNewTasks = document.querySelector('.input_newTask');
 const $btnIncludeNewTask = document.querySelector('.fa-circle-plus');
@@ -20,5 +9,6 @@ export const $ulBoxTasks = document.querySelector('.box-tasks');
 const $form = document.querySelector('.form');
 
 $inputNewTasks.focus();
-
 $form.addEventListener('submit', generateLi);
+
+setNewData(arrTasks);
