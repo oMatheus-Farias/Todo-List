@@ -45,21 +45,27 @@ p{
     color: var(--red-color);
     font-size: 4rem;
     border-bottom: 2px solid var(--red-color);
+    margin-top: 3em;
 }
 
 .main-title_colorLite{
     color: var(--lite-color);
 }
 
-.input-container{
+.form{
     background-color:var(--lite-color);
     padding: 1em 0;
     border-radius: 4px;
 }
 
-.input-container .center{
+.form .center{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.btn_icludeNewTask{
+    border: none;
+    background-color: transparent;
 }
 
 .input_newTask{
@@ -123,6 +129,7 @@ p{
     border-radius: 2px;
     transform: translate(-1.8em, -.1em) rotate(38deg);
     cursor: pointer;
+    display: none;
 }
 
 .fa-pen-to-square{
