@@ -1,8 +1,7 @@
 import { $inputNewTasks } from "./app.js";
-import { $ulBoxTasks } from "./app.js";
 import { arrTasks } from "./func-returnLocalStorage.js";
 
-export function generateLi(e){
+export function generateLi(e, obj){
     e.preventDefault();
 
     const inputNewTasksValue = $inputNewTasks.value;
@@ -59,7 +58,8 @@ export function generateLi(e){
 
     li.appendChild(divBoxEditContainer);
 
-    // $ulBoxTasks.appendChild(li);
+    // console.log(obj)
+    // console.log(e)
 
     return li;
 };
