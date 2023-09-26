@@ -1,10 +1,6 @@
-import { $inputNewTasks } from "./app.js";
-import { arrTasks } from "./func-returnLocalStorage.js";
+// import { arrTasks } from "./func-returnLocalStorage.js";
 
-export function generateLi(e, obj){
-    e.preventDefault();
-
-    const inputNewTasksValue = $inputNewTasks.value;
+export function generateLi(obj){
 
     const li = document.createElement('li');
     const divCheckBox = document.createElement('div');
