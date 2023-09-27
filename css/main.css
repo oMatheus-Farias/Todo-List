@@ -121,15 +121,13 @@ p{
 }
 
 .check{
-    display: block;
     width: .4em;
     height: .8em;
     border-bottom: 4px solid var(--red-color);
     border-right: 4px solid var(--red-color);
     border-radius: 2px;
-    transform: translate(-1.8em, -.1em) rotate(38deg);
+    transform: rotate(38deg) translate(.3em, -.1em) ;
     cursor: pointer;
-    display: none;
 }
 
 .fa-pen-to-square{
@@ -163,6 +161,7 @@ p{
     top: 3em;
     left: -2em;
     z-index: 1;
+    display: none;
 }
 
 .boxEdit_newText{
